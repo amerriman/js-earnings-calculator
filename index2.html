@@ -31,7 +31,7 @@
               <input class="form-input reset-all" type="number" placeholder="Tip percentage..." ng-model="tipRate" min="0" max="100" step=".01" required>
             </div>
             <button class="btn btn-default btn-sm" type="submit" ng-click="calculate()">Submit</button>
-            <button class="btn btn-default btn-sm" type="button" ng-click="">Clear</button>
+            <button class="btn btn-default btn-sm" type="button" ng-click="clear()">Clear</button>
             <br><br>
           </form>
           <br>
@@ -58,7 +58,7 @@
                 <p>Average tip:<span class="reset-all" id="Average-tip">{{ averageTip | currency}}</span></p>
               </div>
               <div class="text-center">
-                <input class="btn btn-default btn-sm" type="button" value="Reset">
+                <button class="btn btn-default btn-sm" type="button" ng-click="reset()">Reset</button>
               </div>
             </div>
           </div>
